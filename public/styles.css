@@ -1,0 +1,47 @@
+.body{
+  text-align: center;
+}
+
+.para{
+  text-align: left;
+  font-size: 2rem;
+  padding:10px;
+  font-weight: bold;
+  display: inline-block;
+  margin-top: 5px 0 0 5px;
+
+}
+.buton{
+
+  margin-left: 70%;
+  margin-bottom: 5px;
+}
+
+.forminput{
+  margin-left: 15px;
+}
+
+
+.multiselect-container >li >a >label {
+  padding: 4px 20px 3px 20px;
+}
+
+.btn_submit{
+  margin-left: 16%;
+  margin-top: 10px;
+}
+
+.btn_actor{
+  margin-top: 12px;
+
+}
+
+.btn_actors{
+  margin-top: 12px;
+}
+
+
+input:checked {
+  text-decoration: line-through;
+  text-decoration-color: #A683E3;
+}

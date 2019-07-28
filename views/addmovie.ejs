@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+
+
+  <!-- Include Twitter Bootstrap and jQuery: -->
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap-multiselect.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
+
+
+
+  <!-- Include the plugin's CSS and JS: -->
+
+  <link rel="stylesheet" href="css/bootstrap-multiselect.css" type="text/css" />
+  <link rel="stylesheet" href="styles.css">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item mr-5 active">
+          <a class="nav-link " href="/">Movie List <span class="sr-only"></span></a>
+        </li>
+
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form>
+    </div>
+  </nav>
+
+
+  <p class="para"> Add new Movie</p>
+  <form class="forminput" action="/addmovie" method="post">
+
+
+    <div class="form-group row">
+      <label  class="col-sm-2 col-form-label">ID
+      </label>
+      <div class="col-sm-10">
+        <input type="text" name="newID" class="form-control" id="inputText3" placeholder="ID no." required>
+      </div>
+    </div>
+
+    <div class="form-group row">
+      <label  class="col-sm-2 col-form-label">Movie name</label>
+      <div class="col-sm-10">
+        <input type="text" name="newMovie" class="form-control" id="inputText3" placeholder="Movie Name">
+      </div>
+    </div>
+
+    <div class="form-group row">
+      <label  class="col-sm-2 col-form-label">Year of Release</label>
+      <div class="col-sm-10">
+        <input type="text" name="newYear" class="form-control" id="inputText3" placeholder="Enter the year of realease">
+      </div>
+    </div>
+
+    <div class="form-group row">
+      <label  class="col-sm-2 col-form-label">Plot</label>
+      <div class="col-sm-10">
+        <textarea class="form-control" name="newPlot" id="exampleFormControlTextarea1" rows="3"></textarea>
+      </div>
+    </div>
+
+
+    <div class="form-group row">
+      <label class="col-sm-2">actors</label>
+      <div class="col-sm-10">
+        <input class="form-control" id="inputText3" type="text" name="newCast">
+
+
+      </div>
+    </div>
+
+
+    <div class="col-sm-10 btn_submit">
+      <button class="btn btn-primary" type="submit" name="button">Submit</button>
+      <button class="btn btn-light">Cancel</button>
+    </div>
+
+  </form>
+
+
+
+
+</body>
+<script src="movie.js" charset="utf-8"></script>
+
+</html>
